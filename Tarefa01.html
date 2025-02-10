@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            #grão{background: bisque;}
+            #verdura{background: greenyellow;}
+            #fruta{background: pink;}
+        </style>
+    </head>
+    <body>
+       <table border="1px">
+            <tr>
+                <th style="background: red;">Frutas</th>
+                <th style="background: green;">Verduras</th>
+                <th style="background: burlywood;">Grãos</th>
+                <th style="background-color: cadetblue;">...</th>
+            </tr>
+            <tbody>
+                <tr>
+                    <td id="fruta">Maçã</td>
+                    <td id="verdura">Alface</td>
+                    <td id="grão">Arroz</td>
+                    <td rowspan="3" style="background: cyan;">3 linhas</td>
+                </tr>
+                <tr>
+                    <td id="fruta">Laranja</td>
+                    <td id="verdura">Beterraba</td>
+                    <td id="grão">Trigo</td>
+                </tr>
+                <tr>
+                    <td colspan="3" style="background-color: gold;">3 colunas</td>
+                </tr>
+            </tbody>
+
+       </table> 
+    </body>
+</html>

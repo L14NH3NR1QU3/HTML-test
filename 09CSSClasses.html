@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <style>
+        /* é possivel fazer mais de uma com virgula */
+        p,h1,h2{color: white;}
+        /* classes são representadas pelos pontos e sobrepoem os genericos */
+        .vermelho{background: yellow; color:red}
+        .azul{background: red; color:blue}
+        .amarelo{background: blue; color:yellow}
+        .bgGreem{background: green}
+        /* id são representados por jogo da velha e sobrepoem as classes */
+        #roxo{background: white; color: rebeccapurple}
+    </style>
+    <body>
+        <!-- style diretamente aplicadas sobrepoem os IDs -->
+        <p style="color: black;">Hello world!</p>
+        <p class="vermelho">I'm RED</p>
+        <p class="azul">i'm BLUE</p>
+        <p class="amarelo">i'm YELLOW</p>
+        <p class="bgGreem">My back ground is greem</p>
+        <p class="azul" id="roxo">Atention</p>
+        <p class="bgGreem" id="roxo" style="color: brown; background-color: pink;">All change</p>
+        <!-- usando espaço é possivel usar mais de uma classe -->
+        <p class="bgGreem vermelho">i'm red and my back ground is greem</p>
+    </body>
+</html>
